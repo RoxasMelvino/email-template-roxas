@@ -1,0 +1,7 @@
+input[type="text"] {
+    width: 35vw;
+  }
+
+#navbarmenu a:hover {
+    border-bottom: 2px solid #FFA500;
+}
