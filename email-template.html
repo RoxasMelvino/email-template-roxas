@@ -11,10 +11,10 @@
   <body>
     
     <!-- navbar -->
-    <div class="container-fluid">
+    <div class="container-fluid shadow">
       <nav class="navbar navbar-expand-md navbar-light bg-white">
-        <a href="#" class="navbar-brand mb-0 h1">
-          <img src="email-logo.jpg" alt="reach logo" height="60" width="60" class="d-inline-block align-center">
+        <a href="#" class="navbar-brand mb-0">
+          <img src="email-logo.jpg" alt="reach logo" height="100" width="100" class="d-inline-block align-center">
           Reach
         </a>
         <form class="d-flex">
@@ -65,86 +65,81 @@
       </nav>
     </div>
 
-    <!-- list email views -->
-    <!-- <div class="container-fluid">
-      <div class="row">
-        <ul class="list-group">
-          <li class="list-group-item">Item 1</li>
-          <li class="list-group-item">Item 2</li>
-          <li class="list-group-item">Item 3</li>
-          <li class="list-group-item">Item 4</li>
-          <li class="list-group-item">Item 5</li>
-          <li class="list-group-item">Item 6</li>
-          <li class="list-group-item">Item 7</li>
-          <li class="list-group-item">Item 8</li>
-          <li class="list-group-item">Item 9</li>
-          <li class="list-group-item">Item 10</li>
-          <li class="list-group-item">Item 11</li>
-          <li class="list-group-item">Item 12</li>
-        </ul>
-      </div>
-    </div> -->
+    <main class="d-flex">
+      <!-- list of emails -->
+      <section >
+        <div class="container-fluid main-container">
+          <div class="row email-list gap-1">
+            <div class="col-md-5 d-flex flex-column justify-content-evenly border-end border-warning">
+              <div class="d-flex align-items-center border p-2 shadow bg-primary">
+                <i class="fa-solid fa-circle-user fa-xl"></i>
+                <p class="fw-bold ms-2 pt-4">Hassy Flores</p>
+                <time datetime="2024-5-7" class="text-secondary"><span class="m-5 text-white">May 7 15:27PM</span></time>
+              </div>
+              <h3 class="m-0 p-0">Mamma Mia Performance!</h3>
+              <p>My performance...</p>
+            </div>
 
-    <div class="container m-0">
-      <div class="row">
+            <div class="col-md-6 d-flex flex-column justify-content-around ">
+              <div class="container-fluid w-80 p-5 opened-email">
+                <div class="row flex-column">
+                  <div class="col">
+                    <div class="d-flex align-items-center">
+                      <i class="fa-regular fa-circle-user fa-2xl"></i>
+                      <p class="fw-bold ms-2 pt-4 fs-3">Hassy Flores</p>
+                      <time datetime="2024-5-7" class="text-secondary"><span class="m-5">May 7 15:27PM</span></time>
+                      <i class="fa-solid fa-trash fa-xl"></i>
+                    </div>
+                    <h3>Mamma Mia Performance!</h3>
+                    <p class="bg-secondary p-2 rounded text-white">My performance starts in a couple hours. I hope to see you there my love! I'm getting ready right now</p>
+                  </div>
+                  <div class="col">
+                    <div class="d-flex align-items-center">
+                      <i class="fa-regular fa-circle-user fa-2xl"></i>
+                      <p class="fw-bold ms-2 pt-4 fs-3">Melvino Roxas</p>
+                      <time datetime="2024-5-7" class="text-secondary"><span class="m-5">May 7 15:27PM</span></time>
+                      <i class="fa-regular fa-paper-plane fa-xl me-2"></i>
+                      <i class="fa-solid fa-trash fa-xl"></i>
+                    </div>
+                    <h3>I just bought the tickets!</h3>
+                    <p class="bg-secondary p-2 rounded text-white fs-1">I just bought a ticket from the website! I'm excited to see you soon!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        <div class="col-md-12 d-flex flex-column justify-content-around">
-          <div class="d-flex align-items-center">
-            <i class="fa-solid fa-circle-user fa-xl"></i>
-            <p class="fw-bold ms-2 pt-4">Roblox</p>
-            <time datetime="2024-5-7" class="text-secondary"><span class="m-5">May 7 15:27PM</span></time>
-          </div>
-          <p class="p-2">Roblox Login Request: ThungusChangus</p>
+            <div class="col-md-5 d-flex flex-column justify-content-around shadow border-end border-warning">
+              <div class="d-flex align-items-center">
+                <i class="fa-solid fa-circle-user fa-xl"></i>
+                <p class="fw-bold ms-2 pt-4">Bay Valley Tech</p>
+                <time datetime="2024-5-4" class="text-secondary"><span class="m-5">May 4 11:36AM</span></time>
+              </div>
+              <p class="p-2">New Message from Bay Valley Tech!</p>
+            </div>
+            <div class="col-md-6"></div>
+            
+            <div class="col-md-5 d-flex flex-column justify-content-around shadow border-end border-warning">
+              <div class="d-flex align-items-center">
+                <i class="fa-solid fa-circle-user fa-xl"></i>
+                <p class="fw-bold ms-2 pt-4">LinkedIn</p>
+                <time datetime="2024-5-7" class="text-secondary"><span class="m-5">May 1 9:27AM</span></time>
+              </div>
+              <p class="p-2">You're on a roll!!!</p>
+            </div>
+            <div class="col-md-6"></div>
+
+            <div class="col-md-5 d-flex flex-column justify-content-around shadow border-end border-warning">
+              <div class="d-flex align-items-center">
+                <i class="fa-solid fa-circle-user fa-xl"></i>
+                <p class="fw-bold ms-2 pt-4">SLHS Dramatic Arts</p>
+                <time datetime="2024-5-7" class="text-secondary"><span class="m-5">Apr 27 7:00AM</span></time>
+              </div>
+              <p class="p-2">Here are your tickets to Mamma Mia!</p>
+            </div>
+            <div class="col-md-6"></div>
         </div>
-
-        <div class="col-md-12 d-flex flex-column justify-content-around">
-          <div class="d-flex align-items-center">
-            <i class="fa-solid fa-circle-user fa-xl"></i>
-            <p class="fw-bold ms-2 pt-4">Bay Valley Tech</p>
-            <time datetime="2024-5-4" class="text-secondary"><span class="m-5">May 4 11:36AM</span></time>
-          </div>
-          <p class="p-2">New Message from Bay Valley Tech!</p>
-        </div>
-        
-        <div class="col-md-12 d-flex flex-column justify-content-around">
-          <div class="d-flex align-items-center">
-            <i class="fa-solid fa-circle-user fa-xl"></i>
-            <p class="fw-bold ms-2 pt-4">LinkedIn</p>
-            <time datetime="2024-5-7" class="text-secondary"><span class="m-5">May 1 9:27AM</span></time>
-          </div>
-          <p class="p-2">You're on a roll!!!</p>
-        </div>
-
-        <div class="col-md-12 d-flex flex-column justify-content-around">
-          <div class="d-flex align-items-center">
-            <i class="fa-solid fa-circle-user fa-xl"></i>
-            <p class="fw-bold ms-2 pt-4">SLHS Dramatic Arts</p>
-            <time datetime="2024-5-7" class="text-secondary"><span class="m-5">Apr 27 7:00AM</span></time>
-          </div>
-          <p class="p-2">Here are your tickets to Mamma Mia!</p>
-        </div>
-
-        <div class="col-md-12 d-flex flex-column justify-content-around">
-          <div class="d-flex align-items-center">
-            <i class="fa-solid fa-circle-user fa-xl"></i>
-            <p class="fw-bold ms-2 pt-4">Roblox</p>
-            <time datetime="2024-5-7" class="text-secondary"><span class="m-5">May 7th 15:27</span></time>
-          </div>
-          <p class="p-2">Roblox Login Request: ThungusChangus</p>
-        </div>
-
-        <div class="col-md-12 d-flex flex-column justify-content-around">
-          <div class="d-flex align-items-center">
-            <i class="fa-solid fa-circle-user fa-xl"></i>
-            <p class="fw-bold ms-2 pt-4">Roblox</p>
-            <time datetime="2024-5-7" class="text-secondary"><span class="m-5">May 7th 15:27</span></time>
-          </div>
-          <p class="p-2">Roblox Login Request: ThungusChangus</p>
-        </div>
-
-    </div>
-    </div>
-
+      </section>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
   </body>
 </html>
