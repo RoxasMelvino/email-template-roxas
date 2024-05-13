@@ -71,24 +71,24 @@
         <div class="container-fluid main-container">
           <div class="row email-list gap-1">
             <div class="col-md-5 d-flex flex-column justify-content-evenly border-end border-warning">
-              <div class="d-flex align-items-center border p-2 shadow bg-primary">
+              <div class="d-flex align-items-center border p-2 shadow bg-primary text-white">
                 <i class="fa-solid fa-circle-user fa-xl"></i>
                 <p class="fw-bold ms-2 pt-4">Hassy Flores</p>
-                <time datetime="2024-5-7" class="text-secondary"><span class="m-5 text-white">May 7 15:27PM</span></time>
+                <time datetime="2024-5-7" class="text-secondary"><span class="m-5 text-white">Apr 27 15:27PM</span></time>
               </div>
               <h3 class="m-0 p-0">Mamma Mia Performance!</h3>
               <p>My performance...</p>
             </div>
 
             <div class="col-md-6 d-flex flex-column justify-content-around ">
-              <div class="container-fluid w-80 p-5 opened-email">
+              <div class="container-fluid p-5 opened-email">
                 <div class="row flex-column">
-                  <div class="col">
+                  <div class="col shadow-sm">
                     <div class="d-flex align-items-center">
                       <i class="fa-regular fa-circle-user fa-2xl"></i>
                       <p class="fw-bold ms-2 pt-4 fs-3">Hassy Flores</p>
                       <time datetime="2024-5-7" class="text-secondary"><span class="m-5">May 7 15:27PM</span></time>
-                      <i class="fa-solid fa-trash fa-xl"></i>
+                      <a href="#"><i class="fa-solid fa-trash fa-xl"></i></a>
                     </div>
                     <h3>Mamma Mia Performance!</h3>
                     <p class="bg-secondary p-2 rounded text-white">My performance starts in a couple hours. I hope to see you there my love! I'm getting ready right now</p>
@@ -98,11 +98,15 @@
                       <i class="fa-regular fa-circle-user fa-2xl"></i>
                       <p class="fw-bold ms-2 pt-4 fs-3">Melvino Roxas</p>
                       <time datetime="2024-5-7" class="text-secondary"><span class="m-5">May 7 15:27PM</span></time>
-                      <i class="fa-regular fa-paper-plane fa-xl me-2"></i>
-                      <i class="fa-solid fa-trash fa-xl"></i>
+                      <a href="#"><i class="fa-solid fa-reply fa-xl me-2"></i></a>
+                      <a href="#"><i class="fa-solid fa-trash fa-xl"></i></a>
                     </div>
                     <h3>I just bought the tickets!</h3>
-                    <p class="bg-secondary p-2 rounded text-white fs-1">I just bought a ticket from the website! I'm excited to see you soon!</p>
+                    <!-- <p class="bg-secondary p-2 rounded text-white fs-1">I just bought a ticket from the website! I'm excited to see you soon!</p> -->
+                    <div class="form-floating">
+                      <textarea class="form-control bg-secondary text-white" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px"></textarea>
+                      <label for="floatingTextarea">Comments</label>
+                    </div>
                   </div>
                 </div>
               </div>
