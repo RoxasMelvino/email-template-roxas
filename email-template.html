@@ -26,7 +26,7 @@
         <div class="collapse navbar-collapse" id="navbarmenu">
           <ul class="navbar-nav d-flex">
             <li class="nav-item bg-success active rounded">
-              <a href="#" class="nav-link active text-light p-2">
+              <a href="#" class="nav-link active text-light p-2" data-bs-toggle="modal" data-bs-target="#composePopUp">
                 Compose
               </a>
             </li>
@@ -64,6 +64,32 @@
         </div>
       </nav>
     </div>
+
+    <!-- Modal -->
+        <div class="modal fade" id="composePopUp" tabindex="-1" aria-labelledby="composeModal" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Send a Message</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="mb-3">
+                  <label for="email-address" class="form-label">To:</label>
+                  <input type="email" class="form-control" id="email-address" placeholder="example123@domain.com">
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label" id="messageBox">Message</label>
+                  <textarea id="messageBox" class="form-control"></textarea>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
     <main class="d-flex">
       <!-- list of emails -->
@@ -143,6 +169,7 @@
             <div class="col-md-6"></div>
         </div>
       </section>
+      
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
   </body>
